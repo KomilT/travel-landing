@@ -1,3 +1,142 @@
 {
-  "foo": "bar"
+  "services": [
+    {
+      "id": 1,
+      "title": "Flight booking",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
+      "img": "/assets/img/services/1.png"
+    },
+    {
+      "id": 2,
+      "title": "Hotel & resort booking",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
+      "img": "/assets/img/services/2.png"
+    },
+    {
+      "id": 3,
+      "img": "/assets/img/services/3.png",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
+      "title": "Family trip planner"
+    },
+    {
+      "id": 4,
+      "title": "Cruise tour",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
+      "img": "/assets/img/services/4.png"
+    },
+    {
+      "id": 5,
+      "title": "Fire camp",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
+      "img": "/assets/img/services/5.png"
+    },
+    {
+      "id": 6,
+      "title": "Corporate holidays",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
+      "img": "/assets/img/services/6.png"
+    }
+  ],
+
+  "stats": [
+    {
+      "id": 1,
+      "title": "Happy travellers",
+      "icon": "/assets/img/stats/1.png",
+      "total": "120,859"
+    },
+    {
+      "id": 2,
+      "title": "Satisfied tours",
+      "icon": "/assets/img/stats/2.png",
+      "total": "2594"
+    },
+    {
+      "id": 3,
+      "title": "Destination",
+      "icon": "/assets/img/stats/3.png",
+      "total": "854"
+    },
+    {
+      "id": 4,
+      "title": "Hotels & resorts",
+      "icon": "/assets/img/stats/4.png",
+      "total": "978"
+    }
+  ],
+
+  "tours": [
+    {
+      "id": 1,
+      "title": "Blue Beauty of Greece",
+      "img": "/assets/img/tours/1.png",
+      "price": "$299/person",
+      "residence": "5 Days / 6 Night",
+      "type": "Honeymoon"
+    },
+    {
+      "id": 2,
+      "title": "Nature of Phuket",
+      "img": "/assets/img/tours/2.png",
+      "price": "$178/person",
+      "residence": "3 Days / 4 Night",
+      "type": "Holiday"
+    },
+    {
+      "id": 3,
+      "title": "World Tour of Paris",
+      "img": "/assets/img/tours/3.png",
+      "price": "$1111/person",
+      "residence": "7 Days / 8 Night",
+      "type": "Holiday"
+    }
+  ],
+
+  "reviews": [
+    {
+      "id": 1,
+      "author": "Ribeca Singh",
+      "avatar": "/assets/img/reviews/1.png",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+      "id": 2,
+      "author": "Jimmy dean",
+      "avatar": "/assets/img/reviews/2.png",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+      "id": 3,
+      "author": "Theodule Terer",
+      "avatar": "/assets/img/reviews/3.png",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    }
+  ],
+
+  "countries": [
+    {
+      "id": 1,
+      "title": "Thailand",
+      "img": "/assets/img/countries/1.png",
+      "price": "$900 - $1900"
+    },
+    {
+      "id": 2,
+      "title": "Italy",
+      "img": "/assets/img/countries/2.png",
+      "price": "$700 - $2000"
+    },
+    {
+      "id": 3,
+      "title": "Indonesia",
+      "img": "/assets/img/countries/3.png",
+      "price": "$300 - $1100"
+    },
+    {
+      "id": 4,
+      "title": "Singapore",
+      "img": "/assets/img/countries/1.png",
+      "price": "$1900 - $2700"
+    }
+  ]
 }

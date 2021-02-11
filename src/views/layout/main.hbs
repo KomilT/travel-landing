@@ -4,14 +4,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Write your meta description here.">
+  <meta name="description"
+    content="Here you can explore our hot services, popular tour packages, plan your travel, explore popular destinations for tourism.">
   <title>travel-landing — KomilT</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#">
+          <img src="/assets/img/logo.png" alt="">
+        </a>
+
+        <nav class="nav">
+          <a class="nav__link" href="#">Home</a>
+          <a class="nav__link" href="#">About us</a>
+          <a class="nav__link" href="#">Our services</a>
+          <a class="nav__link" href="#">Tour package</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
   {{#block "body"}}
-  <p>Default content (optional)</p>
   {{/block}}
+
+  <footer class="footer">
+    <div class="footer__row">
+      <div class="footer__column">
+        <h5 class="footer__subtitle">Quick Links</h5>
+        <ul class="footer__list">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About Company</a>
+          </li>
+          <li>
+            <a href="#">Testimonials</a>
+          </li>
+          <li>
+            <a href="#">Infrastructure</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h5 class="footer__subtitle">Support</h5>
+        <ul class="footer__list">
+          <li>
+            <a href="#">Get Started</a>
+          </li>
+          <li>
+            <a href="#">Lorem</a>
+          </li>
+          <li>
+            <a href="#">Help</a>
+          </li>
+          <li>
+            <a href="#">Ipsum</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h5 class="footer__subtitle">Address</h5>
+        <address class="footer__address">
+          14, 1 Ellis bridge ST,<br>
+          auckland 3500, Australia<br>
+          +1234567890<br>
+          contactus@demo.com
+        </address>
+      </div>
+
+      <div class="socials">
+        <div class="subscription">
+          <label class="subscription__label" for="subscriptionInput">Subscribe to our newsletter</label>
+
+          <form class="subscription__form" action="#">
+            <input class="subscription__input" id="subscriptionInput" type="email" placeholder="Your email">
+            <button class="subscription__button">
+              <svg>
+                <use href="#paper-plane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <ul class="socials__list">
+          <li>
+            <a href="#">
+              <svg>
+                <use href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg>
+                <use href="#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg>
+                <use href="#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg>
+                <use href="#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copyright">travel-landing © All rights reserved</p>
+  </footer>
 </body>
 
 </html>
