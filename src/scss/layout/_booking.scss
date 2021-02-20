@@ -1,0 +1,18 @@
+.booking {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 5rem;
+  background: url("/assets/img/mountains.jpg") no-repeat center / cover;
+  text-align: center;
+}
+
+.booking__title {
+  margin-bottom: 40px;
+  color: #fefeff;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}

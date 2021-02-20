@@ -1,0 +1,48 @@
+.subscription {
+  padding-top: 7.2rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(
+      95deg,
+      rgba(8, 174, 234, 0.8) 0%,
+      rgba(42, 245, 152, 0.8) 100%
+    ),
+    url("/assets/img/surfing.jpg") no-repeat center / cover #2d68a2;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.subscription__title {
+  margin-bottom: 18px;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.subscription__tagline {
+  margin-bottom: 55px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.subscription__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscription__input {
+  width: 100%;
+  max-width: 395px;
+  padding: 11px 30px;
+  border: solid 2px #fff;
+  margin-right: 22px;
+  background-color: transparent;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+
+  &::placeholder {
+    color: #fff;
+  }
+}

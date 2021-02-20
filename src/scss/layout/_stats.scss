@@ -1,0 +1,20 @@
+.stats {
+  position: relative;
+  padding-top: 11rem;
+  padding-bottom: 6.5rem;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    content: "";
+  }
+}
+
+.stats__inner {
+  display: flex;
+  justify-content: space-between;
+}

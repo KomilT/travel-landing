@@ -1,0 +1,113 @@
+$header-height: 81;
+
+.slider {
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  min-height: 480px;
+  background-image: linear-gradient(
+    95deg,
+    rgb(36, 210, 254) 0%,
+    rgb(75, 84, 250) 100%
+  );
+
+  &::after {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    display: block;
+    content: url("/assets/img/mouse-down.svg");
+    transform: translateX(-50%);
+  }
+
+  .swiper-container {
+    position: relative;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+    background-position: center;
+    background-size: cover;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(
+        95deg,
+        rgba(8, 174, 234, 0.65) 0%,
+        rgba(42, 245, 152, 0.65) 100%
+      );
+      content: "";
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-top: calc(
+      -1 * var(--swiper-navigation-size) / 2 + #{$header-height}
+    );
+  }
+
+  .swiper-button-prev {
+    left: 40px;
+  }
+
+  .swiper-button-next {
+    right: 40px;
+  }
+}
+
+.slider__body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+
+.slider__price {
+  position: relative;
+  width: 287px;
+  height: 92px;
+  background: url("/assets/img/paint.png") center no-repeat;
+  color: #006cd1;
+  font-family: "Raleway", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+}
+
+.slider__title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Back to Black Demo", sans-serif;
+  font-size: 78.5px;
+}
+
+.slider__tagline {
+  margin-bottom: 0;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}

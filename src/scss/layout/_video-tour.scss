@@ -1,0 +1,20 @@
+.video-tour {
+  padding-top: 7rem;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("/assets/img/beach.jpg") no-repeat center / cover #696969;
+}
+
+.video-tour__section-header {
+  margin-bottom: 45px;
+}
+
+.video-tour__player {
+  width: 100%;
+  max-width: 660px;
+  max-height: 310px;
+  margin: 0 auto;
+}
