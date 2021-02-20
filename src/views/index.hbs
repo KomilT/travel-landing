@@ -1,129 +1,215 @@
 {{#extend "layout/main"}}
 
 {{#content "body"}}
-<section class="hero">
-  <div class="hero__price">
-    From $199/Person
+<section class="slider">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url('assets/img/slides/1.jpg');"></div>
+      <div class="swiper-slide" style="background-image: url('assets/img/slides/2.jpg');"></div>
+      <div class="swiper-slide" style="background-image: url('assets/img/slides/3.jpg');"></div>
+      <div class="swiper-slide" style="background-image: url('assets/img/slides/4.jpg');"></div>
+    </div>
+
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
   </div>
-  <h2 class="hero__title">Discover Greece</h2>
-  <p class="hero__tagline">Travel with unique experience</p>
+
+  <div class="slider__body">
+    <div class="slider__price">
+      <span>From $199/Person</span>
+    </div>
+    <h2 class="slider__title">Discover Greece</h2>
+    <p class="slider__tagline">Travel with unique experience</p>
+  </div>
 </section>
 
 <section class="services">
-  <aside class="services__sidebar">
-    {{> partials/section-header subtitle="Discover" title="Our Hot Services" }}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <aside class="services__sidebar">
+          {{> partials/section-header subtitle="Discover" title="Our Hot Services"}}
+          <p class="services__tagline">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard
+          </p>
+        </aside>
+      </div>
 
-    <p class="services__tagline">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard
-    </p>
-  </aside>
-
-  <div class="services__content">
-    {{#each services}}
-    <div class="card">
-      <img class="card__img" src="{{this.img}}" alt="">
-      <div class="card__body">
-        <h3 class="card__title">{{this.title}}</h3>
-        <p class="card__description">{{description}}</p>
+      <div class="col-12 col-md-9">
+        <div class="services__content">
+          <div class="row">
+            {{#each services}}
+            <div class="col-6 col-lg-4">
+              <div class="card services__card">
+                <div class="card__img">
+                  <img src="{{this.img}}" alt="">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">{{this.title}}</h3>
+                  <p class="card__description">{{description}}</p>
+                </div>
+              </div>
+            </div>
+            {{/each}}
+          </div>
+        </div>
       </div>
     </div>
-    {{/each}}
   </div>
 </section>
 
 <section class="video-tour">
-  {{> partials/section-header subtitle="Discover" title="Watch Our Video Tour"}}
+  <div class="container">
+    {{> partials/section-header
+    class="section-header_align_center section-header_theme_white video-tour__section-header"
+    subtitle="Discover"
+    title="Watch Our Video Tour"
+    }}
 
-  {{!-- <video class="video-tour__player" src=""></video> --}}
+    <video id="my-player" class="video-tour__player video-js vjs-big-play-centered" controls
+      poster="/assets/video/promo-poster.jpg">
+      <source src="/assets/video/promo.mp4" type="video/mp4">
+      </source>
+    </video>
+  </div>
 </section>
 
 <section class="stats">
-  {{#each stats}}
-  <div class="stats-item">
-    <img class="stats-item__icon" src="{{this.icon}}" alt="">
-    <p class="stats-item__total">{{this.total}}</p>
-    <p class="stats-item__title">{{this.title}}</p>
+  <div class="container">
+    <div class="stats__inner">
+      {{#each stats}}
+      <div class="stats-item">
+        <img class="stats-item__icon" src="{{this.icon}}" alt="">
+        <p class="stats-item__total">{{this.total}}</p>
+        <p class="stats-item__title">{{this.title}}</p>
+      </div>
+      {{/each}}
+    </div>
   </div>
-  {{/each}}
 </section>
 
 <section class="tours">
-  {{> partials/section-header subtitle="We offer" title="Popular Tour Package"}}
+  <div class="container">
+    {{> partials/section-header
+    class="section-header_align_center tours__section-header"
+    subtitle="We offer"
+    title="Popular Tour Package"
+    }}
 
-  {{#each tours}}
-  <div class="card-tour">
-    <div class="card-tour__img">
-      <div class="card-tour__type">{{this.type}}</div>
-      <a href="#">
-        <img src="{{this.img}}" alt="">
-      </a>
-    </div>
-    <div class="card-tour__body">
-      <p class="card-tour__price">{{this.price}}</p>
-      <a class="card-tour__link" href="#">
-        <h3 class="card-tour__title">{{this.title}}</h3>
-      </a>
-      <p class="card-tour__residence">{{this.residence}}</p>
+    <div class="row">
+      {{#each tours}}
+      <div class="col-12 col-md-4">
+        <div class="card-tour tours__card-tour">
+          <div class="card-tour__img">
+            <div class="card-tour__type">{{this.type}}</div>
+            <a href="#">
+              <img src="{{this.img}}" alt="">
+            </a>
+          </div>
+          <div class="card-tour__body">
+            <p class="card-tour__price">{{this.price}}</p>
+            <a class="card-tour__link" href="#">
+              <h3 class="card-tour__title">{{this.title}}</h3>
+            </a>
+            <p class="card-tour__residence">{{this.residence}}</p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
     </div>
   </div>
-  {{/each}}
 </section>
 
 <section class="subscription">
   <h2 class="subscription__title">Get 10% Off on Your Next Travel</h2>
   <p class="subscription__tagline">Maximum doscout 1000$ per person</p>
 
-  <form class="subscription__form" action="">
-    <input class="input" type="text" placeholder="Enter your email">
-    <button class="button">Subscribe</button>
+  <form class="subscription__form" action="" onsubmit="return false;">
+    <input class="subscription__input" type="email" placeholder="Enter your email">
+    <button class="button button_theme_white">Subscribe</button>
   </form>
 </section>
 
 <section class="reviews">
-  {{> partials/section-header subtitle="Our smiles" title="Happy Travelers"}}
+  <div class="container">
+    {{> partials/section-header
+    class="section-header_align_center reviews__section-header"
+    subtitle="Our smiles"
+    title="Happy Travelers"
+    }}
 
-  <div class="reviews__items">
-    {{#each reviews}}
-    <div class="review">
-      <header class="review__header">
-        <img class="review__avatar" src="{{this.avatar}}" alt="">
-        <a class="review__link" href="#">
-          <h3 class="review__author">{{this.author}}</h3>
-        </a>
-      </header>
+    <div class="reviews__items">
+      <div class="row">
+        {{#each reviews}}
+        <div class="col-12 col-md-4 d-flex">
+          <div class="review reviews__review">
+            <header class="review__header">
+              <a class="mb-2" href="#">
+                <div class="review__avatar">
+                  <img src="{{this.avatar}}" alt="">
+                </div>
+              </a>
+              <a class="review__link" href="#">
+                <h3 class="review__author">{{this.author}}</h3>
+              </a>
+            </header>
 
-      <p class="review__text">{{this.text}}</p>
+            <p class="review__text">{{this.text}}</p>
+          </div>
+        </div>
+        {{/each}}
+      </div>
     </div>
-    {{/each}}
   </div>
 </section>
 
 <section class="booking">
   <h2 class="booking__title">Ready to plan your trip?</h2>
-  <button class="button button__filled">Book now</button>
+  <button class="button button_theme_primary">Book now</button>
 </section>
 
 <section class="countries">
-  {{> partials/section-header subtitle="Destination" title="Popular Tourism Countries"}}
+  <div class="container">
+    {{> partials/section-header
+    class="section-header_align_center countries__section-header"
+    subtitle="Destination"
+    title="Popular Tourism Countries"
+    }}
 
-  <div class="countries__items">
-    {{#each countries}}
-    <div class="card-country">
-      <img class="card-country__img" src="{{this.img}}" alt="">
-      <div class="card-country__body">
-        <div>
-          <h3 class="card-country__title">{{this.title}}</h3>
-          <p class="card-country__price">{{this.price}}</p>
+    <div class="countries__items">
+      <div class="row">
+        {{#each countries}}
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="card-country countries__card-country mx-auto">
+            <div class="card-country__img">
+              <img src="{{this.img}}" alt="">
+            </div>
+            <div class="card-country__body">
+              <div>
+                <h3 class="card-country__title">{{this.title}}</h3>
+                <p class="card-country__price">{{this.price}}</p>
+              </div>
+              <a class="card-country__button" href="#">
+                <svg>
+                  <use href="#card-country__arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-        <a class="card-country__button" href="#"></a>
+        {{/each}}
       </div>
     </div>
-    {{/each}}
   </div>
 </section>
 
 <section class="map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.61809078752!2d-73.98784328531363!3d40.748428379328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjMiTiA3M8KwNTknMDguNCJX!5e0!3m2!1sen!2s!4v1613191680763!5m2!1sen!2s"
+    width="100%" height="435" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+    tabindex="0"></iframe>
 </section>
 {{/content}}
 
