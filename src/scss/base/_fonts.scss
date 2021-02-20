@@ -1,0 +1,17 @@
+@font-face {
+  font-display: swap;
+  font-family: "Back to Black Bold Demo";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/assets/fonts/BacktoBlackBoldDemo.woff2") format("woff2"),
+    url("/assets/fonts/BacktoBlackBoldDemo.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Back to Black Demo";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/assets/fonts/BacktoBlackDemo.woff2") format("woff2"),
+    url("/assets/fonts/BacktoBlackDemo.woff") format("woff");
+}

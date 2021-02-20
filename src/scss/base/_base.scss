@@ -5,3 +5,8 @@ html {
 body {
   font-size: 1.6rem;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
