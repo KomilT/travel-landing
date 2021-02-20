@@ -1,0 +1,26 @@
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-item__icon {
+  margin-bottom: 22px;
+}
+
+.stats-item__total {
+  margin-bottom: 0;
+  color: #1a1a1b;
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.stats-item__title {
+  margin-bottom: 0;
+  color: #1a1a1b;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}

@@ -1,0 +1,31 @@
+$color-icon: #dcdbdb;
+
+.socials__list {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.socials__item {
+  margin-right: 28px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    fill: $color-icon;
+    transition: fill 0.15s;
+  }
+
+  svg:hover {
+    fill: lighten($color-icon, 15%);
+  }
+}
+
+.socials__newsletter {
+  margin-bottom: 22px;
+}

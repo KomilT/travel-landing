@@ -1,0 +1,68 @@
+$color-link: #4b54fa;
+
+.card-tour {
+  box-shadow: 0 0 12px 0 rgba(101, 101, 101, 0.2);
+  color: #1a1a1b;
+  font-family: "Raleway", sans-serif;
+}
+
+.card-tour__img {
+  position: relative;
+  background-color: #c8c8c8;
+
+  img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
+
+.card-tour__type {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  padding: 7px 9px 4px;
+  background-color: #fed701;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.card-tour__body {
+  padding-top: 16px;
+  padding-bottom: 22px;
+  line-height: 1;
+  text-align: center;
+}
+
+.card-tour__price {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-tour__link {
+  padding: 5px 0;
+  color: $color-link;
+  transition: color 0.15s;
+
+  &:hover {
+    color: darken($color-link, 15%);
+    text-decoration: none;
+  }
+}
+
+.card-tour__title {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-tour__residence {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+}

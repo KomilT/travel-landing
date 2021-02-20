@@ -1,0 +1,64 @@
+$color-link: #4b54fa;
+
+.review {
+  position: relative;
+  padding: 54px 42px 78px 45px;
+  background-color: #f4f4f4;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    display: block;
+    height: 27px;
+    content: url("/assets/img/quotes.svg");
+    transform: translateX(-50%);
+  }
+}
+
+.review__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.review__link {
+  padding: 5px 0;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.review__avatar {
+  display: inline-block;
+  overflow: hidden;
+  width: 85px;
+  height: 85px;
+  background-color: #696969;
+  border-radius: 50%;
+}
+
+.review__author {
+  display: inline-block;
+  margin-bottom: 0;
+  color: $color-link;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.15s;
+
+  &:hover {
+    color: darken($color-link, 15%);
+  }
+}
+
+.review__text {
+  margin-bottom: 30px;
+  color: #1a1a1b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+}

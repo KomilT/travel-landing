@@ -1,0 +1,101 @@
+$button-border-radius: 20px;
+
+.card-country {
+  position: relative;
+  width: 271px;
+  height: 425px;
+  box-shadow: 0 0 20px 0 rgba(101, 101, 101, 0.2);
+  color: #fefeff;
+  line-height: 1;
+}
+
+.card-country__img {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(48, 48, 48, 0.5) 19%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    content: "";
+  }
+}
+
+.card-country__body {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+}
+
+.card-country__title {
+  margin-bottom: 12px;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card-country__price {
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-country__button {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 14px 10px 13px;
+  background: linear-gradient(to top, #08aeea, #2af598);
+  border-radius: $button-border-radius;
+  box-shadow: 0 0 20px 0 rgba(101, 101, 101, 0.2);
+  transition: transform 0.15s;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      to top,
+      darken(#08aeea, 7.5%),
+      darken(#2af598, 7.5%)
+    );
+    border-radius: $button-border-radius;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:active {
+    transform: scale(1.1);
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 13px;
+    fill: #fff;
+    transform: translate(-50%, -50%);
+  }
+}

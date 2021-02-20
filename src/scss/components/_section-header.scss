@@ -1,0 +1,39 @@
+.section-header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+
+  svg {
+    width: 54px;
+    height: 12px;
+    stroke: #4b54fa;
+  }
+}
+
+.section-header__subtitle {
+  margin-bottom: 0;
+  color: #8d8d8d;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.section-header__title {
+  margin-bottom: 0;
+  color: #1a1a1b;
+  font-size: 26px;
+}
+
+.section-header_align_center {
+  text-align: center;
+}
+
+.section-header_theme_white {
+  .section-header__subtitle,
+  .section-header__title {
+    color: #fff;
+  }
+
+  svg {
+    stroke: #fff;
+  }
+}

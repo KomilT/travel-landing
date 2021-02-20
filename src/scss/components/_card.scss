@@ -1,0 +1,29 @@
+.card {
+  font-family: "Raleway", sans-serif;
+}
+
+.card__img {
+  display: inline-block;
+  margin-bottom: 22px;
+  background-color: #696969;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.card__title {
+  margin-bottom: 8px;
+  color: #1a1a1b;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card__description {
+  margin-bottom: 0;
+  color: #8d8d8d;
+  font-size: 16px;
+  font-weight: 500;
+}
