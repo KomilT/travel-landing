@@ -61,6 +61,7 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "core-js": "^3.8.0",
-    "regenerator-runtime": "^0.13.7"
+    "regenerator-runtime": "^0.13.7",
+    "swiper": "^6.4.11"
   }
 }
