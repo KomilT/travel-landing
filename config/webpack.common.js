@@ -38,6 +38,20 @@ module.exports = {
         },
       },
       {
+        test: /\.woff2?$/i,
+        loader: "file-loader",
+        options: {
+          name: "[path][name].[ext]",
+        },
+      },
+      {
+        test: /\.mp4$/i,
+        loader: "file-loader",
+        options: {
+          name: "[path][name].[ext]",
+        },
+      },
+      {
         test: /\.html$/i,
         loader: "html-loader",
         options: {
@@ -66,6 +80,9 @@ module.exports = {
             ignore: ["**/.gitkeep"],
           },
           noErrorOnMissing: true,
+        },
+        {
+          from: "assets/img/slides/**/*",
         },
       ],
     }),
