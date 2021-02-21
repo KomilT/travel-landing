@@ -11,11 +11,11 @@
 @import "~sass-rem";
 @import "abstracts/variables";
 
-@import "base/reset";
+@import "~bootstrap/scss/bootstrap-reboot";
 @import "base/fonts";
 @import "base/base";
 
-@import "layout/grid";
+@import "~bootstrap/scss/bootstrap-grid";
 @import "layout/booking";
 @import "layout/countries";
 @import "layout/footer";
