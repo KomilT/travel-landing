@@ -1,0 +1,25 @@
+$color-link: #303134;
+
+.menu {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.menu__item {
+  a {
+    display: block;
+    padding: 8px 0;
+    color: $color-link;
+    font-family: "Raleway", sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.15s;
+
+    &:hover {
+      color: lighten($color-link, 15%);
+      text-decoration: none;
+    }
+  }
+}

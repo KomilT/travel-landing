@@ -21,20 +21,35 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__inner">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
         <a class="logo" href="#">
           <img src="/assets/img/logo.png" alt="">
         </a>
 
-        <nav class="nav">
-          <a class="nav__link" href="#">Home</a>
-          <a class="nav__link" href="#">About us</a>
-          <a class="nav__link" href="#">Our services</a>
-          <a class="nav__link" href="#">Tour package</a>
-        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="menu navbar-nav ml-auto">
+            <li class="menu__item">
+              <a href="#">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">About us</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Our services</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Tour package</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
 
   <main>
