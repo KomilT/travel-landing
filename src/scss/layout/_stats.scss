@@ -1,7 +1,7 @@
 .stats {
   position: relative;
-  padding-top: 11rem;
-  padding-bottom: 6.5rem;
+  padding-top: rem(110px);
+  padding-bottom: rem(65px);
 
   &::after {
     position: absolute;
