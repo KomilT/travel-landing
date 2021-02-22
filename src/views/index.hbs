@@ -78,12 +78,14 @@
 
 <section class="stats">
   <div class="container">
-    <div class="stats__inner">
+    <div class="row">
       {{#each stats}}
-      <div class="stats-item">
-        <img class="stats-item__icon" src="{{this.icon}}" alt="">
-        <p class="stats-item__total">{{this.total}}</p>
-        <p class="stats-item__title">{{this.title}}</p>
+      <div class="col-6 col-md-3">
+        <div class="stats-item stats__stats-item">
+          <img class="stats-item__icon" src="{{this.icon}}" alt="">
+          <p class="stats-item__total">{{this.total}}</p>
+          <p class="stats-item__title">{{this.title}}</p>
+        </div>
       </div>
       {{/each}}
     </div>

@@ -1,7 +1,7 @@
 .stats {
   position: relative;
   padding-top: rem(110px);
-  padding-bottom: rem(65px);
+  padding-bottom: rem(15px);
 
   &::after {
     position: absolute;
@@ -14,7 +14,6 @@
   }
 }
 
-.stats__inner {
-  display: flex;
-  justify-content: space-between;
+.stats__stats-item {
+  margin-bottom: 50px;
 }
