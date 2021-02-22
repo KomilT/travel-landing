@@ -28,21 +28,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid #fff;
+  border-radius: 25px;
+
+  @media (min-width: $screen-sm) {
+    border: none;
+    border-radius: 0;
+  }
 }
 
 .subscription__input {
   width: 100%;
-  max-width: 395px;
-  padding: 11px 30px;
-  border: solid 2px #fff;
-  margin-right: 22px;
+  padding: 11px 18px;
+  border: 0;
   background-color: transparent;
   border-radius: 25px;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
 
+  @media (min-width: $screen-sm) {
+    max-width: 395px;
+    padding: 11px 30px;
+    border: 2px solid #fff;
+    margin-right: 22px;
+  }
+
   &::placeholder {
     color: #fff;
+  }
+}
+
+.subscription__button {
+  padding: 17px !important;
+  margin: -2px -2px -2px 0;
+
+  @media (min-width: $screen-sm) {
+    padding: 17px 33px !important;
+    margin: 0;
   }
 }
