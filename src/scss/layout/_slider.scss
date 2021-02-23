@@ -98,7 +98,7 @@ $header-height: 81;
   color: #006cd1;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
 
   @media (min-width: $screen-lg) {
     width: 287px;
@@ -120,6 +120,7 @@ $header-height: 81;
   color: #fff;
   font-family: "Back to Black Demo", sans-serif;
   font-size: 46px;
+  font-weight: 900;
 
   @media (min-width: $screen-lg) {
     margin-bottom: 18px;
