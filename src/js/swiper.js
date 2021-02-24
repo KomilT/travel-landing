@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Swiper from "swiper/bundle";
-import "swiper/swiper-bundle.css";
+import "swiper/swiper-bundle.min.css";
 
 const slider = new Swiper(".slider .swiper-container", {
   autoplay: true,
