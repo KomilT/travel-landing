@@ -1,12 +1,6 @@
 .section-header {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-
-  svg {
-    width: 54px;
-    height: 12px;
-    stroke: #4b54fa;
-  }
 }
 
 .section-header__subtitle {
@@ -23,6 +17,14 @@
   font-size: 26px;
 }
 
+.section-header__curve {
+  width: 54px;
+  height: 12px;
+  fill-rule: evenodd;
+  stroke: #4b54fa;
+  stroke-width: 2;
+}
+
 .section-header_align_center {
   text-align: center;
 }
@@ -33,7 +35,7 @@
     color: #fff;
   }
 
-  svg {
+  .section-header__curve {
     stroke: #fff;
   }
 }
