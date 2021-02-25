@@ -2,16 +2,19 @@ $button-border-radius: 20px;
 
 .card-country {
   position: relative;
-  width: 271px;
-  height: 425px;
+  width: 100%;
+  max-width: 271px;
   box-shadow: 0 0 20px 0 rgba(101, 101, 101, 0.2);
   color: #fefeff;
   line-height: 1;
+
+  @media (min-width: $screen-sm) {
+    max-width: none;
+  }
 }
 
 .card-country__img {
   position: relative;
-  display: inline-block;
 
   &::before {
     position: absolute;
@@ -27,6 +30,10 @@ $button-border-radius: 20px;
     );
     content: "";
   }
+
+  img {
+    width: 100%;
+  }
 }
 
 .card-country__body {
@@ -36,7 +43,8 @@ $button-border-radius: 20px;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 18px;
+  padding: 12px 58px 12px 18px;
+  word-break: break-all;
 }
 
 .card-country__title {
@@ -54,8 +62,9 @@ $button-border-radius: 20px;
 }
 
 .card-country__button {
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
   width: 40px;
   height: 40px;
   padding: 14px 10px 13px;
