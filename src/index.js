@@ -1,7 +1,7 @@
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { importAll } from "@lib/import-all";
+import { importAll } from "@lib/importAll";
 import "./js/index";
 import "./scss/main.scss";
 

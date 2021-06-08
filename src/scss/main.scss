@@ -8,14 +8,14 @@
     5. components
 */
 
-@import "~sass-rem";
+@import "abstracts/sass-rem";
 @import "abstracts/variables";
 
-@import "~bootstrap/scss/bootstrap-reboot";
+@import "base/reset";
 @import "base/fonts";
 @import "base/base";
 
-@import "~bootstrap/scss/bootstrap-grid";
+@import "layout/grid";
 @import "layout/booking";
 @import "layout/countries";
 @import "layout/footer";

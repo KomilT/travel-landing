@@ -1,11 +1,11 @@
 # travel-landing
 
-[![License](https://img.shields.io/github/license/KomilT/travel-landing?color=red)](https://github.com/KomilT/travel-landing/blob/master/LICENSE)
+[![](https://img.shields.io/github/license/KomilT/travel-landing)](https://github.com/KomilT/travel-landing/blob/master/LICENSE)
 
 travel-landing is a landing page built with [webpack-boilerplate](https://github.com/KomilT/webpack-boilerplate).<br>
 You can access the demo [here](https://komilt.github.io/travel-landing/).
 
-![preview](https://site.com/preview.png)
+![](https://user-images.githubusercontent.com/39556179/109175122-4bce7f00-77a7-11eb-800a-c8b8fd862e35.png)
 
 ## Content
 

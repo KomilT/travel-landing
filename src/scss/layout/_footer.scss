@@ -10,7 +10,7 @@
 .footer__column {
   margin-bottom: 15px;
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $breakpoint-md) {
     margin-bottom: 0;
   }
 }

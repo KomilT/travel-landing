@@ -8,7 +8,7 @@
 .navbar .menu {
   margin-top: 16px;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $breakpoint-lg) {
     margin-top: 0;
 
     a {

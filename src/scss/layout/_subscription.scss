@@ -31,7 +31,7 @@
   border: 2px solid #fff;
   border-radius: 25px;
 
-  @media (min-width: $screen-sm) {
+  @media (min-width: $breakpoint-sm) {
     border: none;
     border-radius: 0;
   }
@@ -47,15 +47,15 @@
   font-size: 16px;
   font-weight: 500;
 
-  @media (min-width: $screen-sm) {
+  &::placeholder {
+    color: #fff;
+  }
+
+  @media (min-width: $breakpoint-sm) {
     max-width: 395px;
     padding: 11px 30px;
     border: 2px solid #fff;
     margin-right: 22px;
-  }
-
-  &::placeholder {
-    color: #fff;
   }
 }
 
@@ -63,7 +63,7 @@
   padding: 17px !important;
   margin: -2px -2px -2px 0;
 
-  @media (min-width: $screen-sm) {
+  @media (min-width: $breakpoint-sm) {
     padding: 17px 33px !important;
     margin: 0;
   }
